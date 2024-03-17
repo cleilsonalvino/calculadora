@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../calculadora/estilo/style.css">
+  </head>
+  <body>
+
+    <section>
+      <h1>Minha primeira calculadora</h1>
+        <div class="calculadora">
+        <table>
+          <h1>Calculadora</h1>
+          <p id="resultado"></p>
+          <tr>
+            <td><button onclick="clean('')">C</button></td>
+            <td><button onclick="apagarUm()"><</button></td>
+            <td><button onclick="inserir('/')" id="operadores">/</button></td>
+            <td><button onclick="inserir('*')" id="operadores">*</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="inserir('7')">7</button></td>
+            <td><button onclick="inserir('8')">8</button></td>
+            <td><button onclick="inserir('9')">9</button></td>
+            <td><button onclick="inserir('-')" id="operadores">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="inserir('4')">4</button></td>
+            <td><button onclick="inserir('5')">5</button></td>
+            <td><button onclick="inserir('6')">6</button></td>
+            <td><button onclick="inserir('+')" id="operadores">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="inserir('1')">1</button></td>
+            <td><button onclick="inserir('2')">2</button></td>
+            <td><button onclick="inserir('3')">3</button></td>
+            <td rowspan="2"><button id="operadores" onclick="calcular()">=</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button id="zero" onclick="inserir('0')">0</button></td>
+            <td><button onclick="inserir('.')" id="operadores">.</button></td>
+          </tr>
+      
+        </table>
+      
+      </div>
+      <h5>Criado por Cleilson Alvino</h5>
+
+    </section>
+    <script src="javascript/javascript.js"></script>
+   </body>
+</html>
